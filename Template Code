@@ -6,34 +6,34 @@
       },
 
       branding: {
-        logo: "https://i.postimg.cc/SNWGFBQ2/SWautomation-logo.png",
-        name: "Xtance",
-        welcomeText: "Hi 👋, how can we help?",
-        responseTimeText: "We typically respond right away"
+        logo: "YOUR COMPANY LOGO",  // <-- change this with a direct link of the image!!!
+        name: "YOUR COMPANY NAME/SUPPORT TEAM NAME",  // <-- change this as you wish
+        welcomeText: "Hi 👋, how can we help?",  // <-- change this as you wish
+        responseTimeText: "We typically respond right away"  // <-- change this as you wish
       },
 
       teaser: {
         enabled: true,
-        text: "What brings you here today?",
-        subText: "Tap here to start a chat",
+        text: "What brings you here today?",  // <-- change this as you wish
+        subText: "Tap here to start a chat",   // <-- change this as you wish
         autoShow: true,
         openOnClick: true
       },
 
       whatsapp: {
         enabled: true,
-        phoneE164: "8801914491272",
-        message: "Hi! I'm on your website and need help.",
+        phoneE164: "YOUR/SUPPORT TEAM WHATSAPP NUMBER",   // <-- change this as you wish
+        message: "Hi! I'm on your website and need help.",  // <-- change this as you wish
         showInHeader: true
       },
 
       style: {
         // main gradients
-        primaryColor: "#854fff",
-        secondaryColor: "#6b3fd4",
+        primaryColor: "#854fff",  // <-- change this as you wish
+        secondaryColor: "#6b3fd4",  // <-- change this as you wish
 
         // widget placement
-        position: "right", // "right" or "left"
+        position: "right", // "right" or "left"  // <-- change this as you wish
 
         // panel colors
         backgroundColor: "#ffffff",
