@@ -1,0 +1,51 @@
+ <script>
+    window.ChatWidgetConfig = {
+      webhook: {
+        url: "https://YOUR-N8N-DOMAIN/webhook/XXXX/chat",  // <-- put your real webhook URL
+        route: "general"
+      },
+
+      branding: {
+        logo: "https://i.postimg.cc/SNWGFBQ2/SWautomation-logo.png",
+        name: "Xtance",
+        welcomeText: "Hi 👋, how can we help?",
+        responseTimeText: "We typically respond right away"
+      },
+
+      teaser: {
+        enabled: true,
+        text: "What brings you here today?",
+        subText: "Tap here to start a chat",
+        autoShow: true,
+        openOnClick: true
+      },
+
+      whatsapp: {
+        enabled: true,
+        phoneE164: "8801914491272",
+        message: "Hi! I'm on your website and need help.",
+        showInHeader: true
+      },
+
+      style: {
+        // main gradients
+        primaryColor: "#854fff",
+        secondaryColor: "#6b3fd4",
+
+        // widget placement
+        position: "right", // "right" or "left"
+
+        // panel colors
+        backgroundColor: "#ffffff",
+        fontColor: "#111827",
+
+        // WhatsApp button colors (THIS changes the icon color too)
+        whatsappBg: "rgba(255,255,255,.10)",
+        whatsappHoverBg: "rgba(255,255,255,.16)",
+        whatsappIconColor: "#00ff88"  // <-- change to any color you want (example neon green)
+      },
+
+      requestTimeoutMs: 15000
+    };
+  </script>
+     <script src=></script>
