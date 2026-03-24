@@ -15,6 +15,7 @@
   //  #10 Teaser single line: added optional subText field in config
   //  #11 Teaser re-show on update(): guarded with isChatOpen flag
   //  #12 Teaser 900ms too short: increased to 1600ms
+  //  #13 WhatsApp SVG color override: force currentColor on SVG fills/strokes
   // ============================================================
  
   const defaults = {
@@ -345,10 +346,12 @@
   font-size:26px;font-weight:900;line-height:1;color:#fff;
 }
  
-/* FIX #7: WhatsApp is an <a>, isolated hover rule */
+/* FIX #7 & #13: WhatsApp is an <a>, isolated hover rule + force SVG currentColor */
 .cw-wa{background:${waBg};color:${waIcon};}
 .cw-wa:hover{background:${waHoverBg}}
 .cw-wa svg{display:block}
+/* FIX #13: force WhatsApp SVG to respect configured icon color override */
+.cw-wa svg, .cw-wa svg * { fill: currentColor !important; stroke: currentColor !important; }
  
 /* ── Body ── */
 .cw-body{
