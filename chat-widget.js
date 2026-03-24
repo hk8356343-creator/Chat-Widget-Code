@@ -347,11 +347,13 @@
 }
  
 /* FIX #7 & #13: WhatsApp is an <a>, isolated hover rule + force SVG currentColor */
-.cw-wa{background:${waBg};color:${waIcon};}
-.cw-wa:hover{background:${waHoverBg}}
-.cw-wa svg{display:block}
+/* Website/theme CSS can override .cw-wa color, so scope to #chat-widget-root and add !important */
+#${rootId} a.cw-icon-btn.cw-wa{background:${waBg} !important;color:${waIcon} !important;}
+#${rootId} a.cw-icon-btn.cw-wa:hover{background:${waHoverBg} !important;}
+#${rootId} a.cw-icon-btn.cw-wa svg{display:block}
 /* FIX #13: force WhatsApp SVG to respect configured icon color override */
-.cw-wa svg, .cw-wa svg * { fill: currentColor !important; stroke: currentColor !important; }
+#${rootId} a.cw-icon-btn.cw-wa svg,
+#${rootId} a.cw-icon-btn.cw-wa svg * { fill: currentColor !important; stroke: currentColor !important; }
  
 /* ── Body ── */
 .cw-body{
