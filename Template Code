@@ -22,7 +22,7 @@
 
       whatsapp: {
         enabled: true,
-        phoneE164: "YOUR/SUPPORT TEAM WHATSAPP NUMBER",   // <-- change this as you wish
+        phoneE164: "YOUR/SUPPORT TEAM WHATSAPP NUMBER",   // <-- change this with any number with country code but do not use (+)
         message: "Hi! I'm on your website and need help.",  // <-- change this as you wish
         showInHeader: true
       },
